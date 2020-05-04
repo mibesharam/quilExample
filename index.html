@@ -4,39 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
-    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Quick Quill Editor</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Document</title>
 </head>
 
 <body>
-    <header class="container-fluid mb-5">
-        <div class="p-2">
-            <h1>Quill Editor Example</h1>
-        </div>
-    </header>
-
-
     <div class="container">
-        <div id="editor">
-            <p>start writing here and press save</p>
-        </div>
-        <div class="pt-3 mb-3">
-            <button class="btn btn-warning" onclick="save()" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Save All</button>
-        </div>
+        <div class="grid-container">
+            <header>
+                <label class="title">Custom Partitioned Inputs</label>
+            </header>
+            <aside>
+                <ul class="navbar">
+                    <li class="active">
+                        <a href="#creditcard">Credit Card</a>
+                    </li>
+                    <li>
+                        <a href="#phone">Phone Number</a>
+                    </li>
+                    <li>
+                        <a href="#date">Date Input</a>
+                    </li>
+                    <li>
+                        <a href="#monthyear">Date MM/YY</a>
+                    </li>
+                    <li>
+                        <a href="#customBlock">Custom Block</a>
+                    </li>
+                    <li>
+                        <a href="#customDeliminator">Custom Deliminator</a>
+                    </li>
+                </ul>
+            </aside>
+            <main>
 
-        <div id="collapseExample">
-            <i><strong>Assume there is server request to save data and fetch result shown in below editor:-</strong></i>
-            <div id="editor1">
-            </div>
-          </div>
+
+
+            </main>
+        </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
-    <script src="./scripts/main.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+    <!-- Developement CDN React LInks -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.5.10/cleave-react.min.js" crossorigin></script>
+    <!-- Babelfor JSx -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- react source file -->
+    <script src="./scripts/index.js" type="text/babel"></script>
 </body>
 
 </html>
